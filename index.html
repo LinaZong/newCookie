@@ -31,7 +31,7 @@
       var  exp = new  Date();
       exp.setTime(exp.getTime() + Days* 24*60*60*1000);
       var  isCookie = "true";
-      document.cookie= "downloadFlag="+ isCookie;
+      document.cookie= "downloadFlag=" + isCookie;
       console.log("meiyou");
 
 
@@ -40,9 +40,14 @@
   function  checkCookie() {
 
       downloadFlag=getCookie();
+
       console.log(downloadFlag);
-      if (downloadFlag == "true" )
+
+      if (downloadFlag.length > 0 )
+
+
       {
+          console.log("唤醒APP");
           window.location.href = "testCookie://downloadFlag"
       }
 

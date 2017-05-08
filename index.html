@@ -50,15 +50,15 @@
   function  checkCookie() {
 
       downloadFlag=getCookie("downLoadFlag");
-//
+
       console.log("获取"+ downloadFlag);
-//
+
       if (downloadFlag)
 
 
     {
          console.log("唤醒APP");
-          window.location.href = "Cookie://downloadFlag=true";
+          window.location.href = "Cookie://downloadFlag?safari&"+document.cookie;
       }
 
       else

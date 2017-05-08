@@ -28,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="61" column="7" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+            <state relative-caret-position="289">
+              <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -61,8 +61,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="27" />
-    <option name="y" value="41" />
+    <option name="x" value="18" />
+    <option name="y" value="370" />
     <option name="width" value="1750" />
     <option name="height" value="764" />
   </component>
@@ -189,15 +189,15 @@
       <workItem from="1493970520582" duration="4713000" />
       <workItem from="1494208187739" duration="677000" />
       <workItem from="1494208995516" duration="129000" />
-      <workItem from="1494209278225" duration="4028000" />
+      <workItem from="1494209278225" duration="4352000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9547000" />
+    <option name="totallyTimeSpent" value="9871000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="27" y="41" width="1750" height="764" extended-state="0" />
+    <frame x="18" y="370" width="1750" height="764" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23019086" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -262,8 +262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="61" column="7" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+        <state relative-caret-position="289">
+          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CookieTest</title>
+</head>
+<body>
+
+<div>
+
+<button type="button" onclick="checkCookie()"> 下载 </button>
+
+</div>
+
+<script type="text/javascript">
+  function  getCookie() {
+
+      if(document.cookie.length > 0){
+
+          console.log("you");
+
+        return  document.cookie.replace("downLoadFlag=",'true');
+
+
+      }
+
+  }
+
+  function setCookie() {
+      var Days = 30;
+      var  exp = new  Date();
+      exp.setTime(exp.getTime() + Days* 24*60*60*1000);
+      var  isCookie = "true";
+      document.cookie= "downloadFlag="+ isCookie;
+      console.log("meiyou");
+
+
+  }
+
+  function  checkCookie() {
+
+      downloadFlag=getCookie();
+      console.log(downloadFlag);
+      if (downloadFlag == "true" )
+      {
+          window.location.href = "testCookie://downloadFlag"
+      }
+
+      else
+      {
+          setCookie();
+      }
+
+
+  }
+    
+</script>
+</body>
+</html>

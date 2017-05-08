@@ -8,53 +8,63 @@
 
 <div>
 
-<button type="button" onclick="checkCookie()"> 下载 </button>
+<button type="button" onclick="checkCookie();  "> 下载 </button>
 
 </div>
 
 <script type="text/javascript">
-  function  getCookie() {
+  function  getCookie(cookie_name) {
 
-      if(document.cookie.length > 0){
+      var  allcookies = document.cookie;
+      var cookie_pos = allcookies.indexOf(cookie_name);
+      if(cookie_pos!= -1){
+          cookie_pos += cookie_name.length + 1;
+          var cookie_end = allcookies.indexOf(";", cookie_pos);
 
-          console.log("you");
 
-        return  document.cookie.replace("downLoadFlag=",'true');
+          if (cookie_end == -1)
+          {
+              cookie_end = allcookies.length;
+          }
 
+          var value = unescape(allcookies.substring(cookie_pos, cookie_end));
 
       }
 
+      return value;
   }
 
   function setCookie() {
+
+      console.log("添加缓存");
       var Days = 30;
       var  exp = new  Date();
       exp.setTime(exp.getTime() + Days* 24*60*60*1000);
-      var  isCookie = "true";
-      document.cookie= "downloadFlag=" + isCookie;
-      console.log("meiyou");
+      var  isCookie = true;
+      var  downLoadFlag = false;
+      document.cookie= "ddownLoadFlag=" + isCookie;
 
 
   }
 
   function  checkCookie() {
 
-//      downloadFlag=getCookie();
+      downloadFlag=getCookie("downLoadFlag");
 //
-//      console.log(downloadFlag);
+      console.log("获取"+ downloadFlag);
 //
-//      if (downloadFlag.length > 0 )
+      if (downloadFlag)
 
 
-//      {
-//          console.log("唤醒APP");
+    {
+         console.log("唤醒APP");
           window.location.href = "Cookie://";
-//      }
+      }
 
-//      else
-//      {
-//          setCookie();
-//      }
+      else
+      {
+          setCookie();
+      }
 
 
   }
